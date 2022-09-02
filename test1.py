@@ -6,6 +6,13 @@ st.set_page_config(page_title="NEW Javier App",
                     page_icon = ":bar_chart:",
                     layout="wide")
 
+# Using "with" notation
+with st.sidebar:
+    add_radio = st.radio(
+        "Choose a shipping method",
+        ("Standard (5-15 days)", "Express (2-5 days)")
+    )
+    
 col1, col2, col3 = st.columns(3)
 
 with col1:
